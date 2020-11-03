@@ -18,24 +18,26 @@
 </head>
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container header__wrap">
 			<nav class="header__navigation">
 				<a href="#" class="logo">
-					<svg class="icon">
+					<svg class="logo__icon">
 						<use xlink:href="images/icons.svg#logo"></use>
 					</svg>
 				</a>
 
 				<div class="menu">
 					<input type="checkbox" class="menu__toggle" id="menu">
-					<label for="menu" class="menu__label">|||</label>
+					<label for="menu" class="menu__label">
+						<span class="menu__line"></span>
+					</label>
 
 					<div class="menu__wrap">
 						<div class="menu__lang">Lang</div>
 
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a href="#" class="menu__link">Головна</a>
+								<a href="#" class="menu__link menu__link--active">Головна</a>
 							</li>
 							<li class="menu__item">
 								<a href="#" class="menu__link">Ціни</a>
@@ -58,7 +60,9 @@
 				<p class="header__text">Фотографія - це мистецтво, застосування та зміцнення спогадів.</p>
 			</div>
 
-			<a href="#" class="button">Watch preview</a>
+			<div class="header__btn">
+				<a href="#" class="button button--large">Watch preview</a>
+			</div>
 
 			<ul class="social">
 				<li class="social__item">

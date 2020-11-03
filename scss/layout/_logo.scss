@@ -1,0 +1,9 @@
+.logo {
+    @include size(40px);
+    display: block;
+
+    &__icon {
+        @include size(100%);
+        color: #1A1A1A;
+    }
+}

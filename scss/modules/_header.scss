@@ -1,8 +1,50 @@
 .header {
     background: url('../images/header-mobile.jpg') no-repeat bottom center;
     background-size: cover;
-    background-color: red;
+    overflow-x: hidden;
 
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        padding: 20px 20px 50px;
+    }
+
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        font: 900 1.875rem/2.1875rem $font-head;
+        text-align: center;
+        text-transform: uppercase;
+        -webkit-text-stroke: 1px rgba(0, 0, 0, .4);
+        color: transparent;
+    }
+
+    &__info {
+        margin: 0 15px;
+    }
+
+    &__subtitle {
+        font: 800 1.875rem/2.1875rem $font-head;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__text {
+        font-weight: 300;
+        font-size: 1.125rem;
+        line-height: 1.5rem;
+        color: #fff;
+        margin-right: 30%;
+    }
+
+    &__btn {
+        text-align: center;
+    }
 }
 
 

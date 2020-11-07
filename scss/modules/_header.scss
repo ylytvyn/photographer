@@ -53,3 +53,9 @@
         background-image: url('../images/header.jpg');
     }
 }
+
+@media (min-width: $mobile-sm) and (max-width: $mobile) {
+    .header {
+        background-image: url('../images/header-tablet.jpg');
+    }
+}

@@ -7,3 +7,20 @@
         color: #1A1A1A;
     }
 }
+
+// Desktop Version
+@media (min-width: $mobile) {
+    .logo {
+        @include size(50px);
+
+        &__icon {
+            transition: all .3s;
+
+            &:hover {
+                color: #fff;
+                transform: scale(1.1);
+            }
+            
+        }
+    }
+}

@@ -26,3 +26,11 @@ body {
 	font-family: $font;
 	color: #1b1b1b;
 }
+
+.wrap {
+	margin: 0 auto;
+	
+	@media (min-width: 1200px) {
+		max-width: 1140px;
+	}
+}

@@ -57,19 +57,6 @@
         background: #000;
     }
 
-    &__wrap {
-        @include size(170px, 50vh);
-        @include pos($r: -190px, $t: -20px);
-        min-height: 200px;
-        background: #fff;
-        transition: all .3s;
-        padding: 25px 30px;
-    }
-
-    &__list {
-
-    }
-
     &__item {
         margin-bottom: 15px;
     }
@@ -96,5 +83,60 @@
 
     &__lang {
         margin: 7px 0 30px;
+    }
+}
+
+// Mobile Version
+@media (max-width: $mobile) {
+    .menu {
+        &__wrap {
+            @include size(170px, 50vh);
+            @include pos($r: -190px, $t: -20px);
+            min-height: 200px;
+            background: #fff;
+            transition: all .3s;
+            padding: 25px 30px;
+        }
+    }
+}
+
+// Mobile Landscape Version
+@media (min-width: $mobile-sm) and (max-width: $mobile) {
+    .menu {
+        &__wrap {
+            height: 100vh;
+        }
+    }
+}
+
+// Desktop Version
+@media (min-width: $mobile) {
+    .menu {
+        &__label {
+            display: none;
+        }
+
+        &__wrap {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: baseline;
+        }
+
+        &__list {
+            display: flex;
+            margin-right: 15px;
+        }
+
+        &__item {
+            margin-right: 20px;
+        }
+
+        &__link {
+            transition: all .3s;
+
+            &:hover {
+                text-shadow: 0 0 20px #000;
+            }
+        }
     }
 }

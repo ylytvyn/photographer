@@ -47,15 +47,56 @@
     }
 }
 
-
+// Desktop Version
 @media (min-width: $mobile) {
     .header {
         background-image: url('../images/header.jpg');
+
+        &__title {
+            font-size: 3.8rem;
+            line-height: 3.8rem;
+            text-align: left;
+            margin-bottom: 15vh;
+        }
+
+        &__info {
+            margin: 0;
+        }
+
+        &__subtitle {
+            font-size: 3rem;
+            line-height: 3rem;
+        }
+
+        &__text {
+            font-size: 1.5rem;
+            line-height: 1.9rem;
+            margin-right: 65%;
+        }
+
+        &__btn {
+            text-align: left;
+            margin-bottom: 15vh;
+        }
+
+        &__wrap {
+            padding-bottom: 10px;
+            position: relative;
+        }
     }
 }
 
+// Mobile landscape Version
 @media (min-width: $mobile-sm) and (max-width: $mobile) {
     .header {
         background-image: url('../images/header-tablet.jpg');
+
+        &__info {
+            text-align: center;
+        }
+
+        &__text {
+            margin-right: 0;
+        }
     }
 }

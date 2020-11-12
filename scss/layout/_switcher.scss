@@ -37,3 +37,12 @@
         }
     }
 }
+
+// Desktop Version
+@media (min-width: $mobile) {
+    .lang {
+        &__label {
+            cursor: pointer;
+        }
+    }
+}
